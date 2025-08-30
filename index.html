@@ -114,13 +114,13 @@
             width: 100%;
         }
         
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: 80px;
-        }
+       .hero {
+    height: calc(100vh - 80px); /* altura da tela menos a do header */
+    display: flex;
+    align-items: center;
+    margin-top: 80px; /* começa abaixo do header */
+}
+
         
         .hero-content {
             max-width: 800px;
@@ -533,7 +533,7 @@
                     <div class="project-info">
                         <h3 class="project-title">
                             <img src="logo.jpg" alt="Ícone AANGOSIF" style="width:28px; height:28px; vertical-align:middle; margin-right:10px;">
-                            AANGOSIF&lt;/&gt;
+                            AANGOSIF
                         </h3>
                         <p class="project-description">A AANGOSIF é uma associação filantrópica de carácter religioso que desenvolve atividades em todo o território nacional, com sede em Viana, Luanda.
 
